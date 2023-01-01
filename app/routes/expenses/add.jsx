@@ -1,5 +1,7 @@
+import ExpenseForm from "~/components/expenses/ExpenseForm";
+
 const AddExpensesPage = () => {
-  return <h1>Add Expenses</h1>;
+  return <ExpenseForm />;
 };
 
 export default AddExpensesPage;

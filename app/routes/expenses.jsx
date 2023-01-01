@@ -1,13 +1,17 @@
 import { Outlet } from "@remix-run/react";
+import ExpensesList from "~/components/expenses/ExpensesList";
 
 import expensesStyles from "~/styles/expenses.css";
+import { DUMMY_EXPENSES } from "./expenses.analysis";
 
 const ExpensesLayout = () => {
   return (
-    <main>
-      <p>Shared Element!</p>
+    <>
       <Outlet />
-    </main>
+      <main>
+        <ExpensesList expenses={DUMMY_EXPENSES} />
+      </main>
+    </>
   );
 };
 

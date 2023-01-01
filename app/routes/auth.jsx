@@ -1,7 +1,8 @@
-import authStyles from "~/styles/auth.ccs";
+import AuthForm from "~/components/auth/AuthForm";
+import authStyles from "~/styles/auth.css";
 
 const AuthPage = () => {
-  return <h1>Auth Page</h1>;
+  return <AuthForm />;
 };
 
 export default AuthPage;
