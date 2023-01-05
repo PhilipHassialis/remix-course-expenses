@@ -1,7 +1,12 @@
 import ExpenseForm from "~/components/expenses/ExpenseForm";
+import Modal from "~/components/util/Modal";
 
 const UpdateExpensesPage = () => {
-  return <ExpenseForm />;
+  return (
+    <Modal>
+      <ExpenseForm />
+    </Modal>
+  );
 };
 
 export default UpdateExpensesPage;
