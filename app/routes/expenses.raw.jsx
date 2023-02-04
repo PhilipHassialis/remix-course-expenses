@@ -1,5 +1,5 @@
-const ExpensesRawPage = () => {
-  return <h1>Expenses Raw Page</h1>;
-};
+import { DUMMY_EXPENSES } from "./__app/expenses.analysis";
 
-export default ExpensesRawPage;
+export const loader = () => {
+  return DUMMY_EXPENSES;
+};
